@@ -1,0 +1,5 @@
+numpy
+pyvista
+pyqt5
+pyvistaqt
+
