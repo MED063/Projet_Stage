@@ -1,8 +1,8 @@
 # Visualisation 3D du Genou et Détection du Point d’Isométrie du LCA – Projet de Stage 
 
-Ce projet s’inscrit dans le cadre d’un stage de **Licence Informatique** au sein du laboratoire **MIS – UPJV**.
+Ce projet s’inscrit dans le cadre de mon stage de **Licence 3 Informatique** au sein du laboratoire **MIS – UPJV**.
 
-Il a pour objectif le développement d’un outil interactif permettant la **visualisation 3D du genou** ainsi que l’**intégration d’une méthode de détection du point d’isométrie** du ligament croisé antérieur (LCA), à partir de fichiers STL issus d’imageries ou de simulations biomécaniques.
+Il a pour objectif le développement d’un outil interactif permettant la **visualisation 3D du genou** ainsi que l’**intégration d’une méthode de détection du point d’isométrie** du ligament croisé antérieur (LCA).
 
 ---
 
@@ -51,7 +51,7 @@ isoLCA/
 ### 1. Cloner le dépôt
 
 ```
-git clone <lien-du-repo>
+git clone https://github.com/MED063/isoLCA.git
 cd isoLCA
 ```
 
@@ -78,7 +78,7 @@ python main.py
 ## Réalisé par
 
 - **Mohamed Amine Sobhi**  
-  Stagiaire – Avril 2025  
+  Stagiaire   
 ---
 
 ## Collaborations
