@@ -86,6 +86,11 @@ python main.py
 ```
 ---
 
+##  Rapport de stage ( en cours )
+
+ [Télécharger la version actuelle en PDF](https://github.com/MED063/isoLCA/blob/main/lca_prototype_rpprt.pdf)
+
+
 ## Réalisé par
 
 - **Mohamed Amine Sobhi**  
