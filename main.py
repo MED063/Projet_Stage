@@ -21,13 +21,13 @@ if __name__ == "__main__":
 
         volumes = charger_et_segmenter(fichier)
         if volumes:
-            # Vous pouvez transmettre le nom du fichier pour l'affichage dans la scène
+            # affichage du nom de fichier 
             afficher_os(volumes, nom_fichier=os.path.basename(fichier))
         else:
             print("Aucun os détecté dans ce fichier.")
             continue
 
-        # Une fois la fenêtre fermée, demander si l'utilisateur souhaite charger un nouveau fichier ou quitter
+        # Une fois la fenêtre fermée, on demande si l'utilisateur souhaite charger un nouveau fichier ou quitter
         choix = input("\nEntrez 'n' pour charger un nouveau fichier ou 'q' pour quitter : ").strip().lower()
         if choix == "q":
             break
