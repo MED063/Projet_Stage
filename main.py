@@ -6,23 +6,30 @@ import os
 app = QApplication([])
 
 def choisir_fichier(dossier="stl_files"):
-    return QFileDialog.getOpenFileName(None, "Sélectionnez un fichier STL", dossier, "Fichiers STL (*.stl)")[0]
+    return QFileDialog.getOpenFileName(
+        None, "Sélectionnez un fichier STL", dossier, "Fichiers STL (*.stl)"
+    )[0]
 
 if __name__ == "__main__":
-    print(" Visualiseur 3D – Modèles de genou")
+    print("Visualiseur 3D – Modèles de genou")
 
     while True:
         fichier = choisir_fichier()
         if not fichier:
-            print(" Aucun fichier sélectionné.")
+            print("Aucun fichier sélectionné.")
             break
 
         volumes = charger_et_segmenter(fichier)
         if volumes:
+            # Vous pouvez transmettre le nom du fichier pour l'affichage dans la scène
             afficher_os(volumes, nom_fichier=os.path.basename(fichier))
         else:
-            print(" Aucun os détecté dans ce fichier.")
+            print("Aucun os détecté dans ce fichier.")
+            continue
 
-        if input("\nEntrée ⏎ = nouveau fichier | q = quitter : ").lower().strip() == "q":
+        # Une fois la fenêtre fermée, demander si l'utilisateur souhaite charger un nouveau fichier ou quitter
+        choix = input("\nEntrez 'n' pour charger un nouveau fichier ou 'q' pour quitter : ").strip().lower()
+        if choix == "q":
             break
-            
+
+    print("Visualisation terminée.")
